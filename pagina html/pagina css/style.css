@@ -1,0 +1,37 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #333; 
+}
+
+header {
+  background-color: #6200ea;
+  color: white; 
+  text-align: center;
+  padding: 20px; 
+}
+
+.caixas {
+  display: flex; 
+  justify-content: center;
+  gap: 15px;
+  margin: 30px; 
+}
+
+.box {
+  background-color: #bb86fc; 
+  color: #fff; 
+  padding: 20px; 
+  border: 2px solid #6200ea; 
+  border-radius: 10px; 
+  width: 100px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #eee;
+  margin-top: 20px;
+}
