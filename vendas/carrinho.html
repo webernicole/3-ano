@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Vendas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="carrinho.html">Carrinho</a></li>
+                <li><a href="cadastro.html">Criar conta</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Carrinho</h2>
+        <div id="carrinho">
+            <form action="/finalizar-compra" method="post">
+                <h3>Produtos</h3>
+
+                <label>
+                    <input type="checkbox" name="produto1" value="camiseta">
+                    Camiseta - R$ 50,00
+                </label><br>
+                Quantidade: <input type="number" name="qtd_camiseta" min="1" value="1"><br><br>
+
+                <label>
+                    <input type="checkbox" name="produto2" value="caneca">
+                    Caneca - R$ 30,00
+                </label><br>
+                Quantidade: <input type="number" name="qtd_caneca" min="1" value="1"><br><br>
+
+                <h3>Dados do Cliente</h3>
+                Nome: <input type="text" name="nome"><br><br>
+                Email: <input type="email" name="email"><br><br>
+                <h3>Valor Total</h3>
+                <h4><strong>R$ 0,00</strong></h4>
+
+                <button type="submit">Finalizar Compra</button>
+            </form>
+        </div>
+    </main>
+    <footer style="padding:10px; text-align:center; font-size:14px; color:#fdfdfd; margin-top:20px;">
+            <p>&copy; 2025 Minha Loja Virtual</p>
+            <p>Email: contato@minhaloja.com | Telefone: (xx) xxxxx-xxxx</p>
+        </footer>
+</body>
+</html>
