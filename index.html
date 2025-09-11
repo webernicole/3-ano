@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Index — Trabalhos 3º ano | Nicole</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">N</div>
+      <div>
+        <h1>Index da Nicole — 3º ano</h1>
+        <p class="lead">Bem-vindo(a)! Nesta página estão organizados os trabalhos e entregas do 3º ano.</p>
+      </div>
+    </header>
+
+    <nav class="grid">
+      <a class="card" href="./vendas/home.html">
+        <h3>Loja virtual</h3>
+        <p>Criação de uma loja de produtos personalizados utilizando front-end.</p>
+      </a>
+
+      <a class="card" href="./mvp/index.html">
+        <h3>MVP — Protótipo</h3>
+        <p>Protótipo inicial com as principais telas e funcionalidades.</p>
+        <div class="meta">pasta: <code>mvp/</code></div>
+      </a>
+
+      
+    </nav>
+
+    <footer>
+      <p>Última atualização: <span id="updated">--/--/----</span></p>
+      <p>Dicas: renomeie os arquivos e pastas com nomes curtos e sem espaços. Use <code>index.html</code> dentro de cada pasta para ligação automática.</p>
+    </footer>
+  </div>
+
+  <script>
+    const d = new Date();
+    const pad = n=>String(n).padStart(2,'0');
+    document.getElementById('updated').textContent = pad(d.getDate()) + '/' + pad(d.getMonth()+1) + '/' + d.getFullYear();
+  </script>
+</body>
+</html>
